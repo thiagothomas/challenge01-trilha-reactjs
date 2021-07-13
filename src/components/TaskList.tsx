@@ -22,6 +22,7 @@ export function TaskList() {
         title: newTaskTitle,
         isComplete: false
       }])
+      setNewTaskTitle('');
     }
   }
 
@@ -35,7 +36,6 @@ export function TaskList() {
     })
 
     setTasks([...tasks]);
-    setNewTaskTitle('');
   }
 
   function handleRemoveTask(id: number) {
