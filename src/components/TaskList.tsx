@@ -38,8 +38,6 @@ export function TaskList() {
   }
 
   function handleRemoveTask(id: number) {
-    tasks.filter(task => task.id !== id);
-
     setTasks(tasks.filter(task => task.id !== id));
   }
 
